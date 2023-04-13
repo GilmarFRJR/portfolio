@@ -4,7 +4,7 @@ function checarTela(){
 
 if($('body').width() < 1210){
 
-    $('#abrirTelaNav').click(function(){
+    $('#abrirTelaNav').on('click', function(){
         $('.blocoNav').fadeIn().css('display', 'flex')
         $('body').css('overflow', 'hidden')
     })
@@ -22,7 +22,11 @@ if($('body').width() < 1210){
     })
 
 } else{
-    return
+
+    $('#abrirTelaNav').off('click')
+
+    $('#abrirTelaContatos').off('click')
+
 } }
 
 
