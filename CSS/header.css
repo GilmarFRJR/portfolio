@@ -75,7 +75,7 @@ nav a, #contato a{
 }
 
 
-.bloco{
+.tela{
     width: 100%;
     height: 100vh;
     background-color: rgb(231, 19, 33);
@@ -92,21 +92,21 @@ nav a, #contato a{
 }
 
 
-.bloco p, .bloco a{
+.tela p, .tela a{
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     font-size: 30px;
 }
 
 
-.bloco img{
+.tela img{
     width: 60px;
     margin-bottom: 30px;
     cursor: pointer;
 }
 
 
-.bloco button{
+.tela button{
     width: 150px;
     height: 30px;
     color: white;
@@ -117,12 +117,12 @@ nav a, #contato a{
 }
 
 
-.blocoContato{
+.telaContato{
     display: none;
 }
 
 
-.blocoNav{
+.telaNav{
     display: none;
 }
 
@@ -333,7 +333,7 @@ nav a, #contato a{
 
 
 @media screen and (max-width: 335px){
-    .bloco a{
+    .tela a{
         font-size: 20px;
     }
 }
@@ -385,7 +385,7 @@ nav a, #contato a{
 
 
 @media screen and (max-width: 221px){
-    .bloco a{
+    .tela a{
         font-size: 16px;
     }
 }

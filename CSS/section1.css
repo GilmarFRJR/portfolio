@@ -63,6 +63,29 @@ section:nth-of-type(1){
 }
 
 
+#abrirTelacertificado{
+    color: rgb(0, 255, 242);
+    cursor: pointer;
+}
+
+
+.telaCertificado{
+    /* display: none; */
+}
+
+
+
+.telaCertificado p{
+    font-size: 18px;
+    /* display: none; */
+}
+
+
+.telaCertificado img{
+    width: 70%;
+}
+
+
 
 
 
@@ -89,6 +112,14 @@ section:nth-of-type(1){
 
     #sobreMim{
         margin-bottom: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px){
+    .telaCertificado img{
+        width: 100%;
     }
 }
 
