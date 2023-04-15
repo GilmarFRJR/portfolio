@@ -6,13 +6,11 @@
     box-sizing: border-box;
     word-wrap: break-word;
     cursor: default;
-    /* word-break: break-all; */
 }
 
 
 body{
     background-color: rgb(33, 36, 55);
-    height: 3000px;
     font-family: 'Rubik', Arial, sans-serif;
 }
 
@@ -22,7 +20,6 @@ header{
     height: 800px;
     margin: auto;
     position: relative;
-    /* background-color: rgb(187, 255, 0); */
 }
 
 
@@ -39,12 +36,10 @@ header{
     position: fixed;
     top: 0;
     z-index: 2;
-    /* background-color: blue; */
 }
 
 
 nav{
-    /* background-color: red; */
     width: 800px;
     height: 100%;
     color: rgb(255, 74, 87);
@@ -63,7 +58,6 @@ nav a, #contato a{
 
 
 #contato{
-    /* background-color: rgb(5, 5, 5); */
     width: 400px;
     height: 100%;
     color: rgb(255, 74, 87);
@@ -346,6 +340,11 @@ nav a, #contato a{
 
 
 @media screen and (max-width: 290px){
+    header{
+        height: 1100px;
+    }
+
+
     #circulo{
         height: 700px;
         top: 70%;

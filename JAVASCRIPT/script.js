@@ -16,9 +16,9 @@ if($('body').width() < 1210){
     })
 
 
-    $('.fecharTelas').on('click', function(){
+    $('.fecharTelas, .navegar').on('click', function(){
         $('.blocoContato, .blocoNav').fadeOut()
-        $('body').css('overflow', 'auto');
+        $('body').css('overflow', 'auto')
     })
 
 } else{
