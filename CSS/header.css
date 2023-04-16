@@ -39,10 +39,14 @@ header{
 }
 
 
+.tituloNavEContato{
+    color: rgb(255, 74, 87);
+}
+
+
 nav{
     width: 800px;
     height: 100%;
-    color: rgb(255, 74, 87);
     font-size: 20px;
 
     display: flex;
@@ -50,7 +54,7 @@ nav{
 }
 
 
-nav a, #contato a{
+nav p, #contato p{
     margin-left: 20px;
     color: white;
     cursor: pointer;
@@ -60,7 +64,6 @@ nav a, #contato a{
 #contato{
     width: 400px;
     height: 100%;
-    color: rgb(255, 74, 87);
     font-size: 20px;
 
     display: flex;
@@ -92,7 +95,7 @@ nav a, #contato a{
 }
 
 
-.tela p, .tela a{
+.tela p{
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     font-size: 30px;
@@ -106,7 +109,7 @@ nav a, #contato a{
 }
 
 
-.tela button{
+button{
     width: 150px;
     height: 30px;
     color: white;
@@ -212,6 +215,12 @@ nav a, #contato a{
 
 
 
+.link{
+    color: rgb(0, 255, 242);
+    cursor: pointer;
+}
+
+
 
 
 
@@ -229,15 +238,16 @@ nav a, #contato a{
 
 
 @media screen and (max-width: 1210px){
-    #barraTopo nav a, #barraTopo #contato a, .doisPontosSumir{
+    nav p,  #contato p, #contato img, .doisPontosSumir{
         display: none;
     }
 
 
-    #barraTopo p{
+    #barraTopo span{
         text-align: center;
         width: 100%;
         cursor: pointer;
+        font-size: 25px;
     }
 
     nav, #contato{
@@ -259,6 +269,11 @@ nav a, #contato a{
 
 
 @media screen and (max-width: 580px){
+    header{
+        height: 850px;
+    }
+
+
     #circulo{
         width: 90%;
         height: 600px;
@@ -321,15 +336,19 @@ nav a, #contato a{
     #contato{
         margin-top: 25px;
     }
-}
+
+    header{
+        height: 900px;
+    }
 
 
-@media screen and (max-width: 380px){
     #circulo{
         border: solid rgb(238, 18, 32) 8px;
-        top: 60%;
+        top: 55%;
     }
+
 }
+
 
 
 @media screen and (max-width: 335px){
@@ -341,13 +360,12 @@ nav a, #contato a{
 
 @media screen and (max-width: 290px){
     header{
-        height: 1100px;
+        height: 1000px;
     }
 
 
     #circulo{
         height: 700px;
-        top: 70%;
     }
 
 

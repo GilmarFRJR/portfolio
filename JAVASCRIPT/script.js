@@ -5,25 +5,21 @@ function checarTela(){
 if($('body').width() < 1210){
 
     $('#abrirTelaNav').on('click', function(){
+        $('html, body').animate({scrollTop : 0},0)
         $('.telaNav').fadeIn().css('display', 'flex')
         $('body').css('overflow', 'hidden')
     })
 
 
     $('#abrirTelaContatos').on('click', function(){
+        $('html, body').animate({scrollTop : 0},0)
         $('.telaContato').fadeIn().css('display', 'flex')
         $('body').css('overflow', 'hidden')
     })
 
 
-    $('#abrirTelacertificado').on('click', function(){
-        $('.telaCertificado').fadeIn().css('display', 'flex')
-        $('body').css('overflow', 'hidden')
-    })
-
-
     $('.fecharTelas, .navegar').on('click', function(){
-        $('.telaContato, .telaNav, .telaCertificado').fadeOut()
+        $('.telaContato, .telaNav').fadeOut()
         $('body').css('overflow', 'auto')
     })
 
@@ -40,6 +36,9 @@ if($('body').width() < 1210){
 setInterval(function(){
     checarTela()
 }, 1000)
+
+
+
 
 
 
