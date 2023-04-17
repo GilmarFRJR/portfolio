@@ -184,32 +184,32 @@ button{
 }
 
 
-.html{
+.htmlCor{
     color: rgb(228, 77, 38);
 }
 
-.css{
+.cssCor{
     color:  rgb(38, 132, 255);
 }
 
-.javascript{
+.javascriptCor{
     color: rgb(255, 255, 0);
 }
 
-.jquery{
+.jqueryCor{
     color: rgb(73, 183, 247);
 }
 
 
-.API{
+.APICor{
     color: rgb(114, 107, 107);
 }
 
-.responsividade{
+.responsividadeCor{
     color: rgb(231, 19, 33);
 }
 
-.SEO{
+.SEOCor{
     color: greenyellow;
 }
 

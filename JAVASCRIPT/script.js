@@ -39,6 +39,20 @@ setInterval(function(){
 
 
 
+$('.irSobreMim').on('click', function(){
+    $('html, body').animate({scrollTop: $('#tituloBasico1').offset().top}, 500)
+})
+
+$('.irServicos').on('click', function(){
+    $('html, body').animate({scrollTop: $('#tituloBasico2').offset().top}, 500)
+})
+
+$('.irProjetos').on('click', function(){
+    $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
+})
+
+
+
 
 
 

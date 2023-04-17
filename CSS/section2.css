@@ -1,0 +1,91 @@
+section:nth-of-type(2){
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 0 20px 0;
+    margin-top: 100px;
+
+    position: relative;
+}
+
+
+#integracaoCor{
+    color: rgb(255, 0, 170);
+}
+
+#hospedagemCor, #manutencaoCor{
+    color: rgb(0, 195, 255);
+}
+
+
+.tituloHabilidadesServicos{
+    font-size: 25px;
+    color: rgb(255, 74, 87);
+    margin-bottom: 30px;
+}
+
+
+.tituloHabilidadesServicos img{
+    width: 50px;
+}
+
+
+#servicos, #servicosExtras{
+    width: 805px;
+    /* text-align: justify; */
+    padding: 20px 40px;
+    background-color: rgba(128, 128, 128, 0.349);
+    line-height: 23px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#servicos{
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+
+#servicosExtras{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 970px){
+    #servicos, #servicosExtras{
+        width: 82%;
+        padding: 20px 10px;
+    }
+
+
+    #servicos{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    #servicos, #servicosExtras{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    #servicos, #servicosExtras{
+        font-size: 14px;
+    }
+
+
+    .tituloHabilidadesServicos{
+        font-size: 22px;
+    }
+}

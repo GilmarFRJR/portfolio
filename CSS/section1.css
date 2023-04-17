@@ -24,18 +24,12 @@ section:nth-of-type(1){
 #sobreMim, #historico{
     width: 380px;
     padding: 20px 20px 20px 10px;
-    background-color: rgba(128, 128, 128, 0.349)
+    background-color: rgba(128, 128, 128, 0.349);
 }
 
 
 #sobreMim{
     margin-right: 20px;
-}
-
-
-.link{
-    color: rgb(0, 255, 242);
-    cursor: pointer;
 }
 
 
@@ -70,6 +64,16 @@ section:nth-of-type(1){
 
 
 
+@media screen and (min-width: 1800px){
+    #sobreMim{
+        margin-right: 100px;
+    }
+    
+    
+    #historico{
+       margin-left: 100px;
+    }
+}
 
 
 @media screen and (max-width: 860px){
