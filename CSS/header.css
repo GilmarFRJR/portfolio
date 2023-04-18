@@ -109,7 +109,7 @@ nav p, #contato p{
 }
 
 
-button{
+.tela button, #botaoFecharCertificado{
     width: 150px;
     height: 30px;
     color: white;

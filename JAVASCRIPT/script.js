@@ -41,14 +41,20 @@ setInterval(function(){
 
 $('.irSobreMim').on('click', function(){
     $('html, body').animate({scrollTop: $('#tituloBasico1').offset().top}, 500)
+    $('.telaContato, .telaNav').fadeOut()
+    $('body').css('overflow', 'auto')
 })
 
 $('.irServicos').on('click', function(){
     $('html, body').animate({scrollTop: $('#tituloBasico2').offset().top}, 500)
+    $('.telaContato, .telaNav').fadeOut()
+    $('body').css('overflow', 'auto')
 })
 
 $('.irProjetos').on('click', function(){
     $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
+    $('.telaContato, .telaNav').fadeOut()
+    $('body').css('overflow', 'auto')
 })
 
 
