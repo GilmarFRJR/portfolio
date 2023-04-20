@@ -1,5 +1,6 @@
 section:nth-of-type(3){
     color: white;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -20,66 +21,222 @@ section:nth-of-type(3){
 
 
 #espacoProjetos{
-    background-color: rgba(128, 128, 128, 0.205);
     width: 80%;
-    height: 800px;
-    border: dashed black 10px;
+    min-height: 1200px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
 }
 
 
-#espacoProjetos > p{
+.espacoProjetosEstilo{
+    /* background-color: rgba(128, 128, 128, 0.205); 
+    border: dashed black 10px;  */
+}
+
+
+#instrucaoProjetos{
     color: gray;
     width: 100%;
     text-align: center;
     padding: 0 15px;
+
+    display: none;
 }
 
 
 .projetos{
     width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.411);
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr / 100%;
-
-    position: absolute;
+    min-height: 1200px;
+    border: solid rgb(255, 255, 255)10px;
+    padding: 15px 10px 0px 20px;
+    background-color: rgb(116, 114, 114);
+    
+    /* display: none; */
 }
 
 
 
 .projeto{
-    margin-bottom: 10px;
+    width: 100%;
+    min-height: 220px;
+    margin-bottom: 20px;
+    border: solid black 4px;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
+    padding: 10px 0 0 300px;
+
+    /* display: none; */
+}
+
+
+.projeto img{
+    width: 96%;
+    height: 96%;
 }
 
 
 .projeto div:nth-child(1){
-    width: 200px;
+    width: 300px;
     height: 100%;
     position: absolute;
-    left: 0;
+    left: 5px;
+    top: 4px;
 }
 
 
 .projeto p:nth-child(2), .projeto p:nth-child(3), .projeto div:nth-child(4){
     height: 33%; 
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+
+.projeto p:nth-child(2){
+    font-size: 22px;
+    height: 60px;
+}
+
+
+.projeto p:nth-child(3){
+    font-size: 14px;
+    min-height: 100px;
+    padding-bottom: 20px;
+    padding-top: 12px;
+}
+
+
+.projeto div:nth-child(4){
+    height: 30px;
+    margin: 10px 0 20px 0;
+}
+
+
+.projeto div:nth-child(4) button:first-of-type{
+    margin: 0 30px 0 20px;
+}
+
+
+.projeto div:nth-child(4) button{
+    background-color: black;
+    color: white;
+    border: solid rgb(255, 74, 87) 3px;
+    padding: 5px 10px;
 }
 
 
 
 
 
-@media screen and (max-width: 740px){
+
+@media screen and (max-width: 900px){
     #espacoProjetos{
         width: 95%;
     }
 }
+
+
+
+@media screen and (max-width: 800px){
+    .projeto div:nth-child(4) button:first-of-type{
+        margin: 0 30px 0 0px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .projeto{
+        padding: 10px 10px 30px 10px;
+        align-items: center;
+    }
+    
+    
+    .projeto div:nth-child(1){
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .projeto img{
+        width: 300px;
+    }
+
+
+    .projeto p:nth-child(2), .projeto p:nth-child(3), .projeto div:nth-child(4){
+        height: auto;
+    }
+    
+    
+    .projeto div:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    
+    .projeto div:nth-child(4) button:first-of-type{
+        margin: 0;
+        margin: 10px 0 20px 0;
+    }
+}
+
+
+@media screen and (max-width: 445px){
+    .subTituloBasico{   
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .projeto img{
+        width: 100%;
+    }
+
+
+    .projeto div:nth-child(1){
+        margin-right: 11px;
+        width: 106%;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    .projeto p:nth-child(2){
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .projeto p:nth-child(3){
+        font-size: 11px;
+    }
+
+
+    .projeto p:nth-child(2), .projeto p:nth-child(3), .projeto div:nth-child(4){
+        width: 115%;
+    }
+
+
+    .projeto div:nth-child(4) button{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 220px){
+    .subTituloBasico{   
+        font-size: 13px;
+    }
+}
+
+
