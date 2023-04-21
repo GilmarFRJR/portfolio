@@ -52,7 +52,7 @@ $('.irServicos').on('click', function(){
 })
 
 $('.irProjetos').on('click', function(){
-    $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
+    $('html, body').animate({scrollTop: $('#tituloBasico4').offset().top}, 500)
     $('.telaContato, .telaNav').fadeOut()
     $('body').css('overflow', 'auto')
 })
