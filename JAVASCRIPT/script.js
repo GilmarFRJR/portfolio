@@ -59,16 +59,59 @@ $('.irProjetos').on('click', function(){
 
 
 
-
-
-
-
 // header fim------------------------------------------------------------------------------------------------------
 
 
 
-// ------------------------------------------------------------------------------------------------------
+// projetos começo ------------------------------------------------------------------------------------------------------
+
+$('#secaoProjeto1').on('click', function(){
+    $('.espacoProjetosEstilo').removeClass('espacoProjetosEstilo')
+    $('#instrucaoProjetos').fadeOut(0001)
+    $('#projetosSites').fadeIn(1000)
+
+    $('#projetosJS, #projetosAPI').css('display', 'none')
+})
 
 
+$('#secaoProjeto2').on('click', function(){
+    $('.espacoProjetosEstilo').removeClass('espacoProjetosEstilo')
+    $('#instrucaoProjetos').fadeOut(0001)
+    $('#projetosJS').fadeIn(1000)
 
-// ------------------------------------------------------------------------------------------------------
+    $('#projetosSites, #projetosAPI').css('display', 'none')
+})
+
+
+$('#secaoProjeto3').on('click', function(){
+    $('.espacoProjetosEstilo').removeClass('espacoProjetosEstilo')
+    $('#instrucaoProjetos').fadeOut(0001)
+    $('#projetosAPI').fadeIn(1000)
+
+    $('#projetosSites, #projetosJS').css('display', 'none')
+})
+
+
+// projetos fim ------------------------------------------------------------------------------------------------------
+
+
+// projetos começo ------------------------------------------------------------------------------------------------------
+
+$(document).ready(function() {
+
+    $(window).scroll(function() {
+
+      $('.esconder').each(function() {
+
+        var posicao = $(this).offset().top
+        var mostrar = $(window).scrollTop() + $(window).height()
+        if (posicao < mostrar) {
+
+          $(this).addClass('mostrar')
+        }
+      })
+    })})
+ 
+
+
+// projetos fim ------------------------------------------------------------------------------------------------------

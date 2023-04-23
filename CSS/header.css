@@ -15,6 +15,17 @@ body{
 }
 
 
+.esconder{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.mostrar{
+    opacity: 1;
+}
+
+
 header{
     width: 1800px;
     height: 800px;

@@ -43,13 +43,11 @@ section:nth-of-type(3){
     width: 100%;
     text-align: center;
     padding: 0 15px;
-
-    display: none;
 }
 
 
 #projetosSites{
-    /* display: none; */
+    display: none;
 }
 
 #projetosJS{
@@ -64,7 +62,7 @@ section:nth-of-type(3){
 
 .projetos{
     width: 100%;
-    min-height: 1200px;
+    min-height: 800px;
     border: solid rgb(255, 255, 255)10px;
     padding: 15px 10px 0px 20px;
     background-color: rgb(116, 114, 114);
@@ -178,6 +176,11 @@ section:nth-of-type(3){
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+
+.cartaoProjeto p{
     cursor: pointer;
 }
 
