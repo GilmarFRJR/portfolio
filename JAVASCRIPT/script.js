@@ -71,6 +71,7 @@ $('#secaoProjeto1').on('click', function(){
     $('#projetosSites').fadeIn(1000)
 
     $('#projetosJS, #projetosAPI').css('display', 'none')
+    $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
 })
 
 
@@ -80,6 +81,7 @@ $('#secaoProjeto2').on('click', function(){
     $('#projetosJS').fadeIn(1000)
 
     $('#projetosSites, #projetosAPI').css('display', 'none')
+    $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
 })
 
 
@@ -89,13 +91,14 @@ $('#secaoProjeto3').on('click', function(){
     $('#projetosAPI').fadeIn(1000)
 
     $('#projetosSites, #projetosJS').css('display', 'none')
+    $('html, body').animate({scrollTop: $('#tituloBasico3').offset().top}, 500)
 })
 
 
 // projetos fim ------------------------------------------------------------------------------------------------------
 
 
-// projetos começo ------------------------------------------------------------------------------------------------------
+// animação de rolagem começo ------------------------------------------------------------------------------------------------------
 
 $(document).ready(function() {
 
@@ -114,4 +117,4 @@ $(document).ready(function() {
  
 
 
-// projetos fim ------------------------------------------------------------------------------------------------------
+// animação de rolagem fim ------------------------------------------------------------------------------------------------------
