@@ -1,7 +1,7 @@
 // header início------------------------------------------------------------------------------------------------------
 
 $(document).on('click', '.bloqueado', function() {
-    alert('Por conta das políticas do site de serviços freelancer cujo você me encontrou, não posso disponibilizar contatos externos, então fale comigo pelo chat do site lá mesmo!')
+    alert('Infelizmente, meus contatos aqui estão bloqueados, fale comigo pelo chat do da plataforma que você me encontrou!')
   })
 
 
