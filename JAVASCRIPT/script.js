@@ -1,5 +1,10 @@
 // header início------------------------------------------------------------------------------------------------------
 
+$(document).on('click', '.bloqueado', function() {
+    alert('Por conta das políticas do site de serviços freelancer cujo você me encontrou, não posso disponibilizar contatos externos, então fale comigo pelo chat do site lá mesmo!')
+  })
+
+
 function checarTela(){
 
 if($('body').width() < 1210){
@@ -11,11 +16,11 @@ if($('body').width() < 1210){
     })
 
 
-    $('#abrirTelaContatos').on('click', function(){
-        $('html, body').animate({scrollTop : 0},0)
-        $('.telaContato').fadeIn().css('display', 'flex')
-        $('body').css('overflow', 'hidden')
-    })
+    // $('#abrirTelaContatos').on('click', function(){
+    //     $('html, body').animate({scrollTop : 0},0)
+    //     $('.telaContato').fadeIn().css('display', 'flex')
+    //     $('body').css('overflow', 'hidden')
+    // })
 
 
     $('.fecharTelas, .navegar').on('click', function(){
